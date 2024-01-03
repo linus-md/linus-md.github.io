@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=.99">
+  <title>Linus Sommer - Personal Website</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body link="pink" alink="aqua" vlink="coral">
+
+  <main>
+    
+    <!-- SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/me.png" alt="Linus Sommer" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Linus Sommer">Linus Sommer</h1>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/linus-md" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://linkedin.com/in/l9r" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://scholar.google.com/citations?user=_q1l1joAAAAJ&hl=en" class="social-link">
+              <ion-icon name="school-outline"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="mailto:lin.som@icloud.com" class="social-link">
+              <ion-icon name="mail-open-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Events</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- ABOUT -->
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Linus Sommer</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            <div class="anchor-regular">
+            I'm a fifth-year mathematics diploma student enrolled at <a href="https://www.uni-leipzig.de/en" target="_blank" rel="noopener noreferrer"> Leipzig University</a>, with a keen interest in computational methods, 
+            particularly in the field of machine learning. Currently, I'm a member of <a href="https://hebartlab.com" target="_blank" rel="noopener noreferrer" > Martin Hebart's lab </a>@ <a href="https://www.cbs.mpg.de/en" target="_blank" rel="noopener noreferrer">MPI CBS</a>, where my work focuses 
+            on vision and computational cognition. Prior to this, I collaborated with <a href="https://pbrdng.github.io" target="_blank" rel="noopener noreferrer"> Paul Breiding </a> @ <a href="https://www.mis.mpg.de" target="_blank" rel="noopener noreferrer">MPI MiS</a> on computational algebraic geometry.
+            </div>
+          </p>
+          <p>
+            <div class="anchor-regular">
+            I have also worked at the <a href="https://www.csp.fraunhofer.de/en.html" target="_blank" rel="noopener noreferrer" > Fraunhofer Center for Silicon Photovoltaics</a>, 
+            where my <a href="https://www.csp.fraunhofer.de/en/areas-of-research/pv-systems-pv-integration/pv-system-diagnostics.html" target="_blank" rel="noopener noreferrer">work</a> 
+            focused on modeling the string power of large PV parks, using clustering to detect faults and degradation in PV parks and
+            creating digital twins. I worked briefly at <a href="https://kpmg.de" target="_blank" rel="noopener noreferrer" > KPMG AG</a>.
+            </div>
+          </p>
+        </section>
+
+        <!--Don't know what this does. -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+            <button class="modal-close-btn" data-modal-close-btn></button>
+        </div>
+
+      </article>
+
+
+      <!-- RESUME -->
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+        
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University of Leipzig</h4>
+              <span>October 2019 — September 2025</span>
+              <p class="timeline-text">
+                I am studying mathematics with minors in finance and computer science. 
+                My focus so far has been mainly on algebraic topics, theoretical computer science, 
+                and investing. I have been the speaker of the mathematics student council and a 
+                member of several councils, e.g., a scholarship awarding committee and two appointment 
+                committees for professorships.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">INRIA Paris-Saclay</h4>
+              <span>April 2024 — September 2024</span>
+              <div class="anchor-regular">
+                <p class="timeline-text">
+                  I will be writing my diploma thesis at INRIA Paris-Saclay under the supervision of
+                  <a href="https://mathexp.eu/lairez/" target="_blank" rel="noopener noreferrer">Pierre Lairrez</a> and
+                  <a href="http://www.lix.polytechnique.fr/Labo/Gleb.POGUDIN/" target="_blank" rel="noopener noreferrer">Gleb Pogudin</a>.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </section>
+        
+
+        <section class="timeline">
+          
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research Assistant @ Max Planck Institute for Human Cognitive and Brain Sciences</h4>
+              <span>March 2022 — March 2023</span>
+              <p class="timeline-text">
+                At MPI CBS, I use my quantitative skills to work on computational neuroscience problems. 
+                I have worked on cameraless eye tracking with DeepMReye, an open source deeplearing project that I have also contributed to.
+                Currently, I am working on contributing a benchmark to Brain-Score, a platform that allows researchers to compare their model 
+                Model against standardized brain benchmarks on multiple dimensions. 
+                
+                My contributions: <div class="anchor-regular"><a href="https://github.com/DeepMReye/DeepMReye/pull/41" target="_blank" rel="noopener noreferrer" >DeepMReye,</a> 
+                <a href="https://github.com/brain-score/brain-score/pull/377" target="_blank" rel="noopener noreferrer"> THINGS benchmark,</a> 
+                <a href="https://github.com/brain-score/model-tools/pull/70" target="_blank" rel="noopener noreferrer">Brain-Score task</a>
+                </div>
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Working Student @ KPMG AG</h4>
+              <span>Ocober 2021 — January 2022</span>
+              <p class="timeline-text">              
+                At KPMG, I organized the bi-weekly team meeting, wrote the weekly data security newsletter and 
+                investigated the state of critical infrastructures in Germany.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Visiting Researcher @ Max Planck Institute for Mathematics in the Sciences</h4>
+              <span>June 2022 - December 2022</span>
+              <p class="timeline-text">
+                At MPI MiS, I collaborated with Paul Breiding, Julia Lindberg, and Gabriel Ong. We worked on a problem in 
+                enumerative geometry. How many real circles are tangent to three conics in the plane? I contributed a 
+                deeplearing model that can predict the number of real tangent circles with 95% accuracy. Our results have been published
+                published in Le Matematiche. Documents: <div class="anchor-regular"><a href="https://lematematiche.dmi.unict.it/index.php/lematematiche/article/view/2450" target="_blank" rel="noopener noreferrer">Le Matematiche,</a> 
+                <a href="https://mathrepo.mis.mpg.de/circlesTangentConics" target="_blank" rel="noopener noreferrer">MathRepo</a></div>
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research Assistant @ Fraunhofer Center for Silicon Photovoltaics</h4>
+              <span>November 2021 - August 2022</span>
+              <p class="timeline-text">
+                At the Fraunhofer Center for Silicon Photovoltaics, my work focused on modeling the string power of large PV parks, 
+                I did this with very high accuracy > 98%.
+                I also used clustering to detect faults and degradation in PV parks. As part of the project
+                VR4PV I investigated possible uses of geographic information systems for visualizing PV data.
+                <div class="anchor-regular"><a href="https://www.imws.fraunhofer.de/de/landesprojekte/virtuelle-umgebung-deepl-learning-pv-systeme.html" target="_blank" rel="noopener noreferrer">VR4PV</a></div>
+              </p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+
+
+      <article class="events" data-page="events">
+
+        <header>
+          <h2 class="h2 article-title">Events</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">2023</h3>
+          </div>
+          <ol class="timeline-list"> 
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Mathematics in Biology Day @ MPI MiS </h4>
+              <span>5.12.2023</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Workshop on Geometry and Machine Learning @ MPI MiS </h4>
+              <span>13.11.-15.11.2023</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Chow Lectures @ MPI MiS </h4>
+              <span>16.10.-18.10.2023</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">LftCM2023 @ HHU</h4>
+              <span>04.09.-08.09.2023</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Let's get Real Conference @ MPI MiS </h4>
+              <span>07.06.-08.06.2023</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"> PyCon & PyData Berlin 2023</h4>
+              <span>17.-19.04.2023</span>
+              <p class="timeline-text">
+                As a volunteer, I helped organize the conference, introduced several speakers, and moderated the 
+                QA sessions that followed the presentations.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research Data in Discrete Mathematics Workshop @ MPI MiS</h4>
+              <span>13.-14.03.2023</span>
+              <p class="timeline-text">
+                I gave a short presentations about the real circles tangent to three conics project.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            
+            </div>
+            <h3 class="h3">2022</h3>
+          </div>
+            <ol class="timeline-list"> 
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Macaulay2 Bootcamp @ MPI MiS</h4>
+              <span>13.-14.12.2022</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Pfaffians, Tensors and Applications Conference @ MPI MiS</h4>
+              <span>28.-30.11.2022</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Magdeburg-Leipzig Seminar Day @ MPI MiS</h4>
+              <span>09.08.2022</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Workshop on Algebraic Geometry, Combinatorics, and Machine Learning @ MPI MiS</h4>
+              <span>08.08.2022</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">StuKon 22 Leipzig @ MPI MiS</h4>
+              <span>03.-05.08.2022</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">PyCon & PyData Berlin 2022</h4>
+              <span>11.-13.04.2022</span>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <!-- PORTFOLIO -->
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Mathematics</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Software</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>Mathematics</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Software</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="mathematics">
+              <a href="https://lematematiche.dmi.unict.it/index.php/lematematiche/article/view/2450" target="_blank" rel="noopener noreferrer">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/conics.png" alt="conics" loading="eager">
+                </figure>
+                <h3 class="project-title">Real circles tangent to three conics</h3>
+                <p class="project-category">Mathematics</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software">
+              <a href="https://github.com/brain-score/vision/pulls/linus-md" target="_blank" rel="noopener noreferrer">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/brainscore_logo.png" alt="Brain-Score" loading="eager">
+                </figure>
+                <h3 class="project-title">Brain-Score</h3>
+                <p class="project-category">Software</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software">
+              <a href="https://github.com/DeepMReye/DeepMReye/pull/41" target="_blank" rel="noopener noreferrer">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/deepmreye_logo.png" alt="DeepMReye" loading="eager">
+                </figure>
+                <h3 class="project-title">DeepMReye</h3>
+                <p class="project-category">Software</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software">
+              <a href="https://github.com/numpy/numpy/pulls?q=is%3Apr+author%3Alinus-md+is%3Amerged+" target="_blank" rel="noopener noreferrer">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/numpy_logo.png" alt="NumPy" loading="eager">
+                </figure>
+                <h3 class="project-title">NumPy</h3>
+                <p class="project-category">Software</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software">
+              <a href="https://github.com/pandas-dev/pandas/pulls?q=is%3Apr+author%3Alinus-md+is%3Amerged+" target="_blank" rel="noopener noreferrer">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/pandas_logo.png" alt="Pandas" loading="eager">
+                </figure>
+                <h3 class="project-title">Pandas</h3>
+                <p class="project-category">Software</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software">
+              <a href="https://github.com/pytorch/pytorch/pulls?q=is%3Apr+author%3Alinus-md+is%3Aclosed+label%3AMerged" target="_blank" rel="noopener noreferrer">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/PyTorch_logo.png" alt="PyTorch" loading="eager">
+                </figure>
+                <h3 class="project-title">PyTorch</h3>
+                <p class="project-category">Software</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+
+<script src="./assets/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
